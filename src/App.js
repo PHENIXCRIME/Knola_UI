@@ -1,12 +1,29 @@
-import React from 'react';
-import GetUsers from "./services/FetchAPI"
+import React ,{Suspense}from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Reset } from 'styled-reset'
+import routes from './config/routes'
+import withHelmet from './utils/withHelmet'
+import GlobalStyles from './components/GlobalStyle'
+// import Navbar from './components/Navbar/index'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-      <GetUsers />
+    <GlobalStyles/>
+    <Reset /> 
+    <Router>
+      <Navbar /> 
+        <Suspense fallback = '...loading'>
+          <Switch>
+            {Object.keys(routes).map(routeKey => (
+        <Route key = {routeKey} {...routes[routeKey] }/>
+      ))}
+          </Switch>
+        </Suspense>
+    </Router>
     </>
   );
 }
 
-export default App;
+export default withHelmet('CAMT DII | Knola') (App);
