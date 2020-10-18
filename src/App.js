@@ -1,8 +1,11 @@
 import React from 'react';
+import GetUsers from "./services/FetchAPI"
 
 function App() {
   return (
-    <div ></div>
+    <>
+      <GetUsers />
+    </>
   );
 }
 
