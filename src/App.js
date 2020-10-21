@@ -4,8 +4,10 @@ import { Reset } from 'styled-reset'
 import routes from './config/routes'
 import withHelmet from './utils/withHelmet'
 import GlobalStyles from './components/GlobalStyle'
-// import Navbar from './components/Navbar/index'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/index'
+import Sidebar from './components/Sidebar/index';
+import Footer from './components/Footer/index'
+import Home from './pages/index'
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
     <GlobalStyles/>
     <Reset /> 
     <Router>
-      <Navbar /> 
+      <Home/>
         <Suspense fallback = '...loading'>
           <Switch>
             {Object.keys(routes).map(routeKey => (
@@ -21,6 +23,7 @@ function App() {
       ))}
           </Switch>
         </Suspense>
+        <Footer />
     </Router>
     </>
   );
