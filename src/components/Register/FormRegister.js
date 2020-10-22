@@ -11,6 +11,11 @@ const FormSignup = ({ submitForm }) => {
   );
 
   return (
+    <>
+    <div className='form-content-left'>
+      <img className='form-img' src='img/drawkit-grape-pack-illustration-3.svg' alt='spaceship' />
+    </div>
+
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
         <h1>
@@ -67,19 +72,6 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           {errors.Gender && <p>{errors.Gender}</p>}
-        </div>
-
-        <div className='form-inputs'>
-          <label className='form-label'>Bio</label>
-          <input
-            className='form-input'
-            type='text'
-            name='Bio'
-            placeholder='Enter your bio'
-            value={values.Bio}
-            onChange={handleChange}
-          />
-          {errors.Bio && <p>{errors.Bio}</p>}
         </div>
 
         <div className='form-inputs'>
@@ -143,9 +135,8 @@ const FormSignup = ({ submitForm }) => {
         </span>
       </form>
     </div>
+    </>
   );
-
-
 };
 
 export default FormSignup;
