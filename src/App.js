@@ -4,9 +4,6 @@ import { Reset } from 'styled-reset'
 import routes from './config/routes'
 import withHelmet from './utils/withHelmet'
 import GlobalStyles from './components/GlobalStyle'
-import Navbar from './components/Navbar/index'
-import Sidebar from './components/Sidebar/index';
-import Footer from './components/Footer/index'
 import Home from './pages/index'
 
 function App() {
@@ -23,7 +20,6 @@ function App() {
       ))}
           </Switch>
         </Suspense>
-        <Footer />
     </Router>
     </>
   );
