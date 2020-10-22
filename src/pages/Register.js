@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroudImage1 from '../assets/Bigsur.jpg'
+// import backgroudImage1 from '../assets/Bigsur.jpg'
 import BackgroundBlock from '../components/BackgroudBlock'
 // import { Title, Subtitle } from '../components/Typography'
 import Form from '../components/Register/Form'
@@ -26,9 +26,9 @@ text-transform : uppercase ;
 function Register () {
   return (
     <div >
-      <BackgroundBlock src={backgroudImage1}>
+      {/* <BackgroundBlock src={backgroudImage1}> */}
       <Form />
-      </BackgroundBlock>
+      {/* </BackgroundBlock> */}
     </div>
   )
 }
