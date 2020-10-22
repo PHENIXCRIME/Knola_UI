@@ -2,7 +2,6 @@ import React from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
-
 import './Form.css';
 
 const FormSignup = ({ submitForm }) => {
@@ -17,7 +16,8 @@ const FormSignup = ({ submitForm }) => {
         <h1>
           Get started with knola today ! Create your account !
         </h1>
-        {/* <div className='form-inputs'>
+
+        <div className='form-inputs'>
           <label className='form-label'>Firstname</label>
           <input
             className='form-input'
@@ -41,7 +41,46 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           {errors.Lastname && <p>{errors.Lastname}</p>}
-        </div> */}
+        </div>
+
+        <div className='form-inputs'>
+          <label className='form-label'>Age</label>
+          <input
+            className='form-input'
+            type='text'
+            name='Age'
+            placeholder='Enter your age'
+            value={values.Age}
+            onChange={handleChange}
+          />
+          {errors.Age && <p>{errors.Age}</p>}
+        </div>
+
+        <div className='form-inputs'>
+          <label className='form-label'>Gender</label>
+          <input
+            className='form-input'
+            type='text'
+            name='Gender'
+            placeholder='Enter your gender'
+            value={values.Gender}
+            onChange={handleChange}
+          />
+          {errors.Gender && <p>{errors.Gender}</p>}
+        </div>
+
+        <div className='form-inputs'>
+          <label className='form-label'>Bio</label>
+          <input
+            className='form-input'
+            type='text'
+            name='Bio'
+            placeholder='Enter your bio'
+            value={values.Bio}
+            onChange={handleChange}
+          />
+          {errors.Bio && <p>{errors.Bio}</p>}
+        </div>
 
         <div className='form-inputs'>
           <label className='form-label'>Username</label>
@@ -100,11 +139,13 @@ const FormSignup = ({ submitForm }) => {
         </button>
         <span className='form-input-login'>
         Already have a knola account?    
-          <Link to='/register'> here </Link> 
+          <Link to='/login'> here </Link> 
         </span>
       </form>
     </div>
   );
+
+
 };
 
 export default FormSignup;

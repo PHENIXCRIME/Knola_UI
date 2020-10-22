@@ -24,6 +24,7 @@ text-transform : uppercase ;
 
 function Home () {
   return (
+    <div>
     <div id='content1'>
       <BackgroundBlock src={backgroudImage1}>
         <Title> NATURAL ALL DAY </Title>
@@ -32,6 +33,7 @@ function Home () {
           Look night time
         </Button>
       </BackgroundBlock>
+      </div>
       <div id='content2'>
         <BackgroundBlock src={backgroudImage2}>
           <Title> NATURAL ALL DAY </Title>

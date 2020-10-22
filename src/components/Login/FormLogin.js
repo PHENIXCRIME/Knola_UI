@@ -2,6 +2,7 @@ import React from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
+
 import './Form.css';
 
 const FormSignup = ({ submitForm }) => {
@@ -9,7 +10,7 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
-
+   
   return (
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
@@ -45,11 +46,14 @@ const FormSignup = ({ submitForm }) => {
         </button>
         <span className='form-input-login'>
           but you have account Knola click   
-          <Link to='/login'> here </Link>
+          <Link to='/register'> here </Link>
         </span>
       </form>
     </div>
   );
+
+
+
 };
 
 export default FormSignup;
