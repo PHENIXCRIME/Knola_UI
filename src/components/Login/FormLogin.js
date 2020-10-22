@@ -12,6 +12,10 @@ const FormSignup = ({ submitForm }) => {
   );
    
   return (
+    <>
+    <div className='form-content-left'>
+          <img className='form-img' src='img/drawkit-grape-pack-illustration-5.svg' alt='spaceship' />
+    </div>
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
         <h1>
@@ -50,6 +54,7 @@ const FormSignup = ({ submitForm }) => {
         </span>
       </form>
     </div>
+    </>
   );
 
 
