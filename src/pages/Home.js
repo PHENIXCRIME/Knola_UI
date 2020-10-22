@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from '../components/Footer/index'
+
 import backgroudImage1 from '../assets/Bigsur.jpg'
 import backgroudImage2 from '../assets/Bigsur2.jpg'
 import BackgroundBlock from '../components/BackgroudBlock'
@@ -43,7 +45,10 @@ function Home () {
           </Button>
         </BackgroundBlock>
       </div>
+      <Footer />
+
     </div>
+    
   )
 }
 export default Home
