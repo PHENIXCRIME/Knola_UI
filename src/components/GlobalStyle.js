@@ -6,16 +6,14 @@ ${reset}
 
  html , body , #root {   
   height : 100vh;
-  width: 99vw;
+  width: 100vw;
 
   font-family: 'Kanit' , sans-serif ; 
   font-size: 20px ; 
 
   scroll-behavior : smooth ;
-/* 
-  @media(max-width : 375px) {
-    font-size : 10px ;
-  } //responsive */
+
+  background-color : #1f4037 ;
 }
 
 a { 
