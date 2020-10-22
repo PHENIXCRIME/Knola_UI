@@ -18,9 +18,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to='profile'>
             Profile
           </SidebarLink>
-          <SidebarLink to='register'>
-            Sign Up
-          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to='login'>Sign In</SidebarRoute>
