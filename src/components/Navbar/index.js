@@ -22,9 +22,6 @@ const Navbar = ({toggle}) => {
         <NavItem>
           <NavLinks to ='/profile'>Profile</NavLinks>
         </NavItem>
-        <NavItem>
-          <NavLinks to ='/register'>Sign up</NavLinks>
-        </NavItem>
       </NavMenu>
 
       <NavBtn>
