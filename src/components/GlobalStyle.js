@@ -8,7 +8,8 @@ ${reset}
   height : 100vh;
   width: 100vw;
 
-  font-family: 'Kanit' , sans-serif ; 
+  /* font-family: 'Kanit' , sans-serif ;  */
+  font-family: 'Pridi', serif;
   font-size: 20px ; 
 
   scroll-behavior : smooth ;
