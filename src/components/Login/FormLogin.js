@@ -22,12 +22,12 @@ const FormSignup = ({ submitForm }) => {
           Welcome to Knola
         </h1>
         <div className='form-inputs'>
-          <label className='form-label'>Email / Username</label>
+          <label className='form-label'>Username</label>
           <input
             className='form-input'
             type='text'
             name='username'
-            placeholder='Enter your username / email'
+            placeholder='Enter your username'
             value={values.username}
             onChange={handleChange}
           />
