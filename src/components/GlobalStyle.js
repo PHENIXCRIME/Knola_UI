@@ -5,11 +5,11 @@ const GlobalStyle = createGlobalStyle`
 ${reset}
 
  html , body , #root {   
-  height : 100vh;
+  overflow-x :hidden ;
   width: 100vw;
 
-  /* font-family: 'Kanit' , sans-serif ;  */
-  font-family: 'Pridi', serif;
+  font-family: 'Kanit' , sans-serif ; 
+  /* font-family: 'Pridi', serif; */
   font-size: 20px ; 
 
   scroll-behavior : smooth ;
