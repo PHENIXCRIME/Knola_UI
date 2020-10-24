@@ -10,11 +10,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import {
   FooterContainer,
   FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -34,8 +29,8 @@ const Footer = () => {
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
               Knola
+              <WebsiteRights>Knola © 2020 All rights reserved.</WebsiteRights>
             </SocialLogo>
-            <WebsiteRights>Knola © 2020 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
