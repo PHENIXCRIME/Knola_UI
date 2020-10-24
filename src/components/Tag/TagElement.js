@@ -4,6 +4,8 @@ export const TagName = styled.div `
  display : grid ;
  grid-template-columns : repeat(3,1fr) ;
  grid-gap : 5px ;
+ box-shadow : 3px 3px 3px #bdc3c7 ;
+ background-color : white ;
 `
 
 
