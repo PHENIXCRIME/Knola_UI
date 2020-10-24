@@ -67,7 +67,6 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 20px auto 0 auto;
-
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
@@ -78,7 +77,7 @@ export const SocialLogo = styled(Link)`
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 18px;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
