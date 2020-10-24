@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import BackgroundBlock from '../components/BackgroudBlock'
 // import { Title, Subtitle } from '../components/Typography'
 import Form from '../components/Register/Form'
+// import RegisterAPI from '../services/Register'
 
 
 const Button = styled.button`
@@ -27,6 +28,7 @@ function Register () {
   return (
     <div >
       {/* <BackgroundBlock src={backgroudImage1}> */}
+
       <Form />
       {/* </BackgroundBlock> */}
     </div>

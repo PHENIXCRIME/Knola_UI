@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
+import RegisterAPI from '../../services/RegisterAPI'
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
+    firstname:'',
+    lastname:'',
+    age:'',
+    gender:'',
     username: '',
     email: '',
     password: '',
@@ -20,9 +25,9 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     setErrors(validate(values));
-    setIsSubmitting(true);
+    RegisterAPI(values,setErrors)
+    console.log(values)
   };
 
   useEffect(

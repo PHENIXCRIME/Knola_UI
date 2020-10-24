@@ -1,16 +1,11 @@
+
 import axios from 'axios'
 
-export default function RegisterAPI(values,setErrors) {
-  console.log(values)
+export default function LoginrAPI(values,setErrors) {
     axios ( {
-      url: 'http://127.0.0.1:3333/api/v1/users',
+      url: 'http://127.0.0.1:3333/api/v1/login',
       method: 'post',
       data: {
-        "user_first_name": values.firstname,
-        "user_last_name": values.lastname,
-        "user_age": values.age,
-        "user_gender": values.gender,
-        "user_email": values.email,
         "user_username": values.username,
         "user_password": values.password,
       },
@@ -21,3 +16,4 @@ export default function RegisterAPI(values,setErrors) {
         setErrors(response.data.error)
     }})
 }
+

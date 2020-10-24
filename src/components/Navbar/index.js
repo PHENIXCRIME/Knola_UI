@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useContext,useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { Nav , NavbarContainer , NavLogo , MobileIcon , NavMenu , NavItem , NavLinks , NavBtn , NavBtnLink } from './NavbarElements'
-
+import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const Navbar = ({toggle}) => {
+  const {isLogin,username}= useContext(LoginContextWrapper)
+
+
+  useEffect (()=> console.log(isLogin),[isLogin])
+
   return (
     <>
     <Nav>
@@ -23,10 +28,15 @@ const Navbar = ({toggle}) => {
           <NavLinks to ='/profile'>Profile</NavLinks>
         </NavItem>
       </NavMenu>
+      {!isLogin ?
+        <NavBtn>
+          <NavBtnLink to = '/login'>Log In</NavBtnLink>
+        </NavBtn>:         
+        <NavBtn>
+          "username"
+        </NavBtn>
+      }
 
-      <NavBtn>
-        <NavBtnLink to = '/login'>Log In</NavBtnLink>
-      </NavBtn>
       </NavbarContainer>
     </Nav>
     </>

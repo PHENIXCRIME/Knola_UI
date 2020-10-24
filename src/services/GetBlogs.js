@@ -1,4 +1,5 @@
 import React , {useState, useEffect} from 'react'
+import axios from 'axios'
 
 export default function GetBlogs() {
   const [error, setError] = useState(null);
@@ -6,19 +7,15 @@ export default function GetBlogs() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3333/api/v1/blogs")
-      .then(res => res.json())
-      .then(
-        ({ data }) => {
-          setIsLoaded(true);
-          setBlogs(data);
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      )
-  }, [])
+    axios ( {
+      url: '/blogs',
+      method: 'get',
+      baseURL: 'http://127.0.0.1:3333/api/v1/',
+      responseType: 'json', 
+    }).then(response => setBlogs(response.data.data)).catch(error =>  
+      setError(error.message)
+    ).finally(setIsLoaded(true))
+  },[])
 
   if (error) {
     return <div>Error: {error.message}</div>;
