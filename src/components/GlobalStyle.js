@@ -13,7 +13,7 @@ ${reset}
 
   scroll-behavior : smooth ;
 
-  background-color : #1f4037 ;
+  background-color : #99f2c8 ;
 }
 
 a { 

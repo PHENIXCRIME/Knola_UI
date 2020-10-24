@@ -36,7 +36,6 @@ const Navbar = ({toggle}) => {
           "username"
         </NavBtn>
       }
-
       </NavbarContainer>
     </Nav>
     </>

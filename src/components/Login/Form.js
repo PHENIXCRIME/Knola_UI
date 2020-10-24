@@ -6,6 +6,7 @@ import LoginContext from '../../contexts/LoginContext'
 
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   function submitForm() {
     setIsSubmitted(true);
   }
