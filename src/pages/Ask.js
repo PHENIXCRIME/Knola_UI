@@ -4,8 +4,11 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
 import CKEditor from "@ckeditor/ckeditor5-react"
 import parse from "html-react-parser"
 
-import '../components/EDITOR/App.css'
-import Form from '../components/Ask/Form'
+import backgroudImage1 from '../assets/Bigsur.jpg'
+import backgroudImage2 from '../assets/Bigsur2.jpg'
+import BackgroundBlock from '../components/BackgroudBlock'
+import { Title, Subtitle } from '../components/Typography'
+import "../components/EDITOR/App.css"
 
 const Button = styled.button`
 padding: 1rem 1.5rem ; 

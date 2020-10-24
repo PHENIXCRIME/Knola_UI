@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
 import './Form.css';
 
-const FormSignup = ({ submitForm }) => {
+  const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
   );
+  
+  useEffect (() => console.log(errors),[errors])
 
   return (
     <>
@@ -40,9 +42,9 @@ const FormSignup = ({ submitForm }) => {
           <input
             className='form-input'
             type='text'
-            name='Lastname'
+            name='lastname'
             placeholder='Enter your Lastname'
-            value={values.Lastname}
+            value={values.lastname}
             onChange={handleChange}
           />
           {errors.Lastname && <p>{errors.Lastname}</p>}
@@ -53,9 +55,9 @@ const FormSignup = ({ submitForm }) => {
           <input
             className='form-input'
             type='text'
-            name='Age'
+            name='age'
             placeholder='Enter your age'
-            value={values.Age}
+            value={values.age}
             onChange={handleChange}
           />
           {errors.Age && <p>{errors.Age}</p>}
@@ -66,9 +68,9 @@ const FormSignup = ({ submitForm }) => {
           <input
             className='form-input'
             type='text'
-            name='Gender'
+            name='gender'
             placeholder='Enter your gender'
-            value={values.Gender}
+            value={values.gender}
             onChange={handleChange}
           />
           {errors.Gender && <p>{errors.Gender}</p>}

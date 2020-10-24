@@ -13,7 +13,6 @@ function Test() {
   return (
     <>
       <GetTags />
-      <GetBlogs />
     </>
   );
 }

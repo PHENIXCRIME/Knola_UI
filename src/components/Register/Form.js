@@ -9,6 +9,7 @@ const Form = () => {
   function submitForm() {
     setIsSubmitted(true);
   }
+
   return (
     <>
       <div className='form-container'>
@@ -16,7 +17,7 @@ const Form = () => {
         {!isSubmitted ? (
           <FormRegister submitForm={submitForm} />
         ) : (
-          <FormSuccess />
+          <FormSuccess to ='/'/>
         )}
       </div>
     </>

@@ -1,16 +1,20 @@
-import React from 'react';
+import React,{useEffect,useContext} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
-
 import './Form.css';
+import {LoginContextWrapper} from '../../contexts/LoginContext'
 
-const FormSignup = ({ submitForm }) => {
+const FormSignup = ({ submitForm }, isSubmitted, setIsSubmitted) => {
+  const {isLogin}= useContext(LoginContextWrapper)
+  
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
-  );
-   
+  )
+  
+useEffect (() => console.log(errors),[errors])
+
   return (
     <>
     <div className='form-content-left'>
