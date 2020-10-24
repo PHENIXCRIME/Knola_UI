@@ -29,7 +29,7 @@ const Footer = () => {
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
               Knola
-              <WebsiteRights>Knola © 2020 All rights reserved.</WebsiteRights>
+              <WebsiteRights> © 2020 All rights reserved.</WebsiteRights>
             </SocialLogo>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
