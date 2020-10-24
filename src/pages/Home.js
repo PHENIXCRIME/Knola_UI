@@ -2,11 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from '../components/Footer/index'
 import TagContent from '../components/Tag/index'
+import PostContent from '../components/PostContent/index'
+import PostHome from '../components/PostHome/index'
+import ProfileHome from '../components/ProfileHome/index'
+import Background1 from '../assets/Bigsur.jpg'
 
 const ShowCase = styled.div `
 
 display: grid;
-  grid-template-columns: 0.7fr 1.2fr 1fr;
+  grid-template-columns: 0.7fr 1.7fr 0.5fr;
   grid-template-rows: 1fr;
   gap: 0px 2em;
   grid-template-areas: ". . .";
@@ -23,16 +27,21 @@ function Home () {
     <>
   
       <ShowCase>
+          
           <Content__left>
-              <TagContent/>
+            <TagContent/>
           </Content__left>
 
           <Content__center>
-
+            <PostHome/>
+            <PostContent src={Background1}></PostContent>
+            <PostContent src={Background1}></PostContent>
+            <PostContent src={Background1}></PostContent>
+            <PostContent src={Background1}></PostContent>
           </Content__center>
 
           <Content__right>
-
+            <ProfileHome/>
           </Content__right>
       </ShowCase>
       
