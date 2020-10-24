@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
+  position: fixed;
+  /* left: 0; */
+  bottom: 0;
+  width: 100%;
 `;
 
 export const FooterWrap = styled.div`
@@ -12,7 +16,7 @@ export const FooterWrap = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: -35px auto;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -105,6 +109,8 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+  padding-bottom: 20px;
+
 `;
 
 export const SocialIconLink = styled.a`
