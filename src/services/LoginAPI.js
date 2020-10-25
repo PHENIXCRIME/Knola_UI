@@ -9,11 +9,14 @@ export default function LoginrAPI(values,setErrors) {
         "user_username": values.username,
         "user_password": values.password,
       },
-      responseType: 'json', 
-    }) .then(response => {
-      console.log(response) 
-      if (response.data.status!=200){
-        setErrors(response.data.error)
-    }})
+      responseType: 'json'
+    }) .then( response => {
+      
+      if (response.data.access_token) {
+        localStorage.setItem("user", JSON.stringify(response.data))
+      }
+      console.log(response.data)
+      return response.data
+    })
 }
 

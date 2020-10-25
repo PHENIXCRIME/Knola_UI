@@ -8,23 +8,24 @@ const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
     username: '',
     password: ''
   });
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [errors, setErrors] = useState({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = e => {
     const { name, value } = e.target;
     setValues({
       ...values,
       [name]: value
-    });
-  };
+    })
+  }
 
   const handleSubmit = e => {
     e.preventDefault();
     setErrors(validate(values));
-    let response = LoginAPI(values,setErrors)
-  };
-  let response 
+    let response =  LoginAPI(values)
+  }
+  let response = null 
   
   useEffect(
     () => {
@@ -37,12 +38,15 @@ const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
 
   useEffect(
     () => { 
-      setIsLogin(true)
-      setUsername(response.data.data.user.user_username.username)         
+      if (response !== null) {
+        setIsLogin(true)
+        console.log(response)
+      }
+      
     },
   )
 
-  return { handleChange, handleSubmit, values, errors };
+  return {handleChange,handleSubmit,values,errors};
 };
 
 export default useForm;
