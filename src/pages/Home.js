@@ -1,54 +1,59 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from '../components/Footer/index'
+import TagContent from '../components/Tag/index'
+import PostContent from '../components/PostContent/index'
+import PostHome from '../components/PostHome/index'
+import ProfileHome from '../components/ProfileHome/index'
+import Background1 from '../assets/Bigsur.jpg'
+import Background2 from '../assets/politics-king.jpg'
+// import DisplayBlock from '../components/DisplayBlock/index'
+// import BackgroundGif from '../assets/Background.gif'
 
-import backgroudImage1 from '../assets/Bigsur.jpg'
-import backgroudImage2 from '../assets/Bigsur2.jpg'
-import BackgroundBlock from '../components/BackgroudBlock'
-import { Title, Subtitle } from '../components/Typography'
+const ShowCase = styled.div `
 
-const Button = styled.button`
-padding: 1rem 1.5rem ; 
-background-color :transparent ;
-border : #fff solid 1px ; 
-border-radius : 8px ; 
-color : #fff ; 
-margin: 1rem ; 
-cursor : pointer ;
-transition : background-color .5s ;
-text-transform : uppercase ; 
-
-&:hover {
-  background-color : #fff ;
-  color: #000; 
-}
+display: grid;
+  grid-template-columns: 0.7fr 1.7fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 2em;
+  grid-template-areas: ". . .";
+  margin : 100px 20px 0 20px ;
 `
+const Content__left = styled.div ``
+const Content__center = styled.div ``
+const Content__right = styled.div ``
+
+
 
 function Home () {
   return (
-    <div>
-    <div id='content1'>
-      <BackgroundBlock src={backgroudImage1}>
-        <Title> NATURAL ALL DAY </Title>
-        <Subtitle> - Day BigSur Natural Park - </Subtitle>
-        <Button as='a' href='#content2'>
-          Look night time
-        </Button>
-      </BackgroundBlock>
-      </div>
-      <div id='content2'>
-        <BackgroundBlock src={backgroudImage2}>
-          <Title> NATURAL ALL DAY </Title>
-          <Subtitle> - Night BigSur Natural Park - </Subtitle>
-          <Button as='a' href='#content1'>
-            Back to day time
-          </Button>
-        </BackgroundBlock>
-      </div>
-      <Footer />
+    <>
+  
+      {/* <DisplayBlock src ={BackgroundGif}> */}
 
-    </div>
-    
+      <ShowCase>
+          
+          <Content__left>
+            <TagContent/>
+          </Content__left>
+
+          <Content__center>
+            <PostHome/>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
+          </Content__center>
+
+          <Content__right>
+            <ProfileHome/>
+          </Content__right>
+      </ShowCase>
+      
+    {/* </DisplayBlock> */}
+      
+      <Footer />
+    </>
   )
 }
 export default Home

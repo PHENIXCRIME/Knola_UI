@@ -13,10 +13,11 @@ const Navbar = ({toggle}) => {
     <>
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>Knola</NavLogo>
+        <NavLogo to='/'>K N O L A</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
+      
       <NavMenu>
         <NavItem>
           <NavLinks to ='/ask'> Ask </NavLinks>
@@ -27,7 +28,6 @@ const Navbar = ({toggle}) => {
         <NavItem>
           <NavLinks to ='/profile'>Profile</NavLinks>
         </NavItem>
-      </NavMenu>
       {!isLogin ?
         <NavBtn>
           <NavBtnLink to = '/login'>Log In</NavBtnLink>
@@ -36,6 +36,8 @@ const Navbar = ({toggle}) => {
           "username"
         </NavBtn>
       }
+      </NavMenu>
+      
       </NavbarContainer>
     </Nav>
     </>

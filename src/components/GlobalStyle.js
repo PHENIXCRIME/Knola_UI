@@ -5,15 +5,17 @@ const GlobalStyle = createGlobalStyle`
 ${reset}
 
  html , body , #root {   
-  height : 100vh;
+  overflow-x :hidden ;
   width: 100vw;
 
   font-family: 'Kanit' , sans-serif ; 
+  /* font-family: 'Pridi', serif; */
   font-size: 20px ; 
 
   scroll-behavior : smooth ;
 
-  background-color : #99f2c8 ;
+  /* background-color : #99f2c8 ; */
+  background-image: linear-gradient(#2980B9 ,#2980B9 , #ffffff);
 }
 
 a { 
