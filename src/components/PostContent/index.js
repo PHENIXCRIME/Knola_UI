@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Post = styled.div `
-  margin-bottom : 80px ;
+  margin-bottom : 100px ;
   box-shadow : 3px 3px 3px #bdc3c7 ;
   background-color : white ;
 `
