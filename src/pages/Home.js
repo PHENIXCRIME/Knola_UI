@@ -18,8 +18,6 @@ display: grid;
 const Content__left = styled.div ``
 const Content__center = styled.div ``
 const Content__right = styled.div ``
-
-
 function Home () {
   return (
     <>
