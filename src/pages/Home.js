@@ -20,7 +20,6 @@ const Content__center = styled.div ``
 const Content__right = styled.div ``
 
 
-
 function Home () {
   return (
     <>
