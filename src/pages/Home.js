@@ -6,6 +6,9 @@ import PostContent from '../components/PostContent/index'
 import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
 import Background1 from '../assets/Bigsur.jpg'
+import Background2 from '../assets/politics-king.jpg'
+// import DisplayBlock from '../components/DisplayBlock/index'
+// import BackgroundGif from '../assets/Background.gif'
 
 const ShowCase = styled.div `
 
@@ -26,6 +29,8 @@ function Home () {
   return (
     <>
   
+      {/* <DisplayBlock src ={BackgroundGif}> */}
+
       <ShowCase>
           
           <Content__left>
@@ -34,16 +39,18 @@ function Home () {
 
           <Content__center>
             <PostHome/>
-            <PostContent src={Background1}></PostContent>
-            <PostContent src={Background1}></PostContent>
-            <PostContent src={Background1}></PostContent>
-            <PostContent src={Background1}></PostContent>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
+            <PostContent src={Background2}></PostContent>
           </Content__center>
 
           <Content__right>
             <ProfileHome/>
           </Content__right>
       </ShowCase>
+      
+    {/* </DisplayBlock> */}
       
       <Footer />
     </>
