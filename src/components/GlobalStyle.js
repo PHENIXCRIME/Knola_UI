@@ -14,8 +14,8 @@ ${reset}
 
   scroll-behavior : smooth ;
 
-  /* background-color : #99f2c8 ; */
-  background-image: linear-gradient(#2980B9 ,#2980B9 , #ffffff);
+  background-color : #99f2c8 ;
+
 }
 
 a { 
