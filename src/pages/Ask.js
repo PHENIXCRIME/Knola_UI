@@ -1,45 +1,21 @@
-import React , {useState} from "react"
+import React from "react"
+import PostAsk from '../components/PostAsk/index'
+import styled from 'styled-components'
 
-// import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
-// import CKEditor from "@ckeditor/ckeditor5-react"
-// import parse from "html-react-parser"
-
-
-import "../components/EDITOR/App.css"
-
-import Form from '../components/Ask/FormAsk'
-
-
+const Mainask = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`
 
 function Ask () { 
-  // const [text,setText] =useState('')
+
   return (
-    <div className ='container'>
-
-    {/* <div className="App">
-      <div className="editor">
-        <CKEditor
-          editor={ClassicEditor}
-          data={text}
-          onChange={(event, editor) => {
-            const data = editor.getData()
-            setText(data)
-          }}
-          />
-    </div>
-
-      <div>
-        <h2>Content</h2>
-        <p>{parse(text)}</p>
-      </div>
-
-    </div> */}
-
-  <Form/>
-
-    
-
-  </div>
+      <Mainask>
+        <PostAsk/>
+      </Mainask>
   )
 }
 export default Ask
