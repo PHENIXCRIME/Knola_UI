@@ -13,11 +13,11 @@ const FormSignup = ({ submitForm }, isSubmitted, setIsSubmitted) => {
     validate
   )
   
-useEffect (() => console.log(errors),[errors])
+// useEffect (() => console.log(errors),[errors])
 
   return (
+    
     <div className ='form-container'>
-
             <div className='form-content-left'>
                   <img className='form-img' src='img/drawkit-grape-pack-illustration-5.svg' alt='spaceship' />
             </div>

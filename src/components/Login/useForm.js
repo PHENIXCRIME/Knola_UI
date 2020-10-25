@@ -1,9 +1,9 @@
-import react,{useState, useEffect,useContext } from 'react';
+import react,{useState, useEffect,useContext } from 'react'
 import LoginAPI from '../../services/LoginAPI'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
-  const {setIsLogin,setUsername}= useContext(LoginContextWrapper)
+  const {isLogin,setIsLogin,username,setUsername}= useContext(LoginContextWrapper)
   const [values, setValues] = useState({
     username: '',
     password: ''
@@ -20,34 +20,31 @@ const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
     })
   }
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    setErrors(validate(values));
-    let response =  LoginAPI(values)
+  const handleSubmit = async e => {
+    e.preventDefault()
+    setErrors(validate(values))
+    response =  await LoginAPI(values)
+    console.log(response)
+    if (response !== undefined) {
+      setIsLogin(true)
+      setUsername(response.user.user_username)
+    }
+    await console.log(username)
+    console.log(isLogin)
   }
   let response = null 
   
   useEffect(
     () => {
       if (Object.keys(errors).length === 0 && isSubmitting) {
-        callback();
+        callback()
       }
     },
     [errors]
-  );
-
-  useEffect(
-    () => { 
-      if (response !== null) {
-        setIsLogin(true)
-        console.log(response)
-      }
-      
-    },
   )
 
-  return {handleChange,handleSubmit,values,errors};
-};
+  return {handleChange,handleSubmit,values,errors}
+}
 
-export default useForm;
+export default useForm
 

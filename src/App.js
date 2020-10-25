@@ -5,10 +5,13 @@ import routes from './config/routes'
 import withHelmet from './utils/withHelmet'
 import GlobalStyles from './components/GlobalStyle'
 import Home from './pages/index'
+import LoginContext from './contexts/LoginContext'
+
 
 function App() {
   return (
     <>
+    <LoginContext>
     <GlobalStyles/>
     <Reset /> 
     <Router>
@@ -21,6 +24,7 @@ function App() {
           </Switch>
         </Suspense>
     </Router>
+    </LoginContext>
     </>
   );
 }

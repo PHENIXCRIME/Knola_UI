@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Form.css';
 import FormLogin from './FormLogin';
 import FormSuccess from './FormSuccess';
-import LoginContext from '../../contexts/LoginContext'
 
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -12,7 +11,6 @@ const Form = () => {
   }
   
   return (
-    <LoginContext>
       <div className='form-container'>
         {!isSubmitted ? (
           <FormLogin submitForm={submitForm} />
@@ -20,7 +18,6 @@ const Form = () => {
           <FormSuccess />
         )}
       </div>
-    </LoginContext>
   );
 };
 
