@@ -49,7 +49,7 @@ export const NavLogo = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #f64f59;
+    color: #81ffd1;
     cursor:pointer;
   }
 
@@ -115,12 +115,12 @@ export const NavLinks = styled(LinkR)`
     transition: all 0.2s ease-in-out;
 
     cursor:pointer;
-    color:#f64f59;
-    border-bottom: 3px solid #01bf71;
+    color:#51cfa1;
+
   }
   
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #51cfa1;
   }
 `;
 
@@ -129,7 +129,7 @@ export const NavBtnLink = styled(LinkR)`
   background: #01bf71;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #ffffff;
   font-size: 20px;
   outline: none;
   border: none;
@@ -140,7 +140,7 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #f64f59;
+    color: #01bf71;
   }
 `;
 
