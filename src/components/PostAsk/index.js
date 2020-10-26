@@ -23,21 +23,24 @@ const Content = styled.div `
 `
 const ContentLeft = styled.div `
   border : 5px solid #3b3b3b ;
-  width : 50% ;
+  width : 30% ;
   border-radius : 20px ;
   background : white ;
   margin : 10px ;
+  padding : 10px ;
   
 `
 const ContentRight = styled.div `
   border : 5px solid #3b3b3b ;
-  width : 50% ;
+  width : 70% ;
   display : flex ; 
   flex-direction : column ;
   justify-content : space-around ;
   background : white ;
   border-radius : 20px ;
-  margin : 10px ;
+  margin : 10px  ;
+  padding : 10px ;
+
 `
 
 const Image = styled.div `
@@ -47,7 +50,7 @@ background-size : contain ;
 width : 550px ;
 height : 550px ;
 align-items : center ;
-margin-top : 20px ;
+margin-top : 60px ;
 `
 
 const BoxImage = styled.div `
@@ -59,12 +62,19 @@ const Head = styled.div `
   text-align : center ;
   padding : 4% ;
   font-size : 30px ;
+  p{
+    font-weight : bold ;
+    font-size : 45px ;
+  }
 `
 const Tag = styled.div `
   display: flex;
   padding: 0 50px;
+  margin-bottom : 20px;
   p{
     width: 30%;
+    font-size : 30px ;
+    font-weight : bold ;
   }
 `
 
@@ -72,7 +82,9 @@ const Question = styled.div `
   display: flex;
   padding: 0 50px;
   p{
+    font-size : 30px ;
     width: 30%;
+    font-weight : bold ;
   }
   `
 
@@ -83,12 +95,16 @@ const FillQuestion =styled.input `
   height : 40px ;
   font-size : 20px ;
   outline : none ;
+  margin-bottom : 20px;
+
 `
 const Description = styled.div `
   display: flex;
   padding: 0 50px;
   p{
+    font-size : 30px ;
     width: 30%;
+    font-weight : bold ;
   }
   `
 
@@ -123,8 +139,9 @@ const Answer = styled.button `
   cursor: pointer;
   outline : none ;
   border : none ;
-
-
+  font-weight : bold ;
+  margin :4%;
+  
  :hover{
    background-color: #67B26F;
  }
@@ -175,6 +192,7 @@ function PostAsk () {
   return (
   <form onSubmit={handleSubmit} className='form' noValidate>
     <Content>
+
         <ContentLeft>
         <BoxImage>
           <Image src = {image1} />
@@ -183,7 +201,6 @@ function PostAsk () {
  
           <ContentRight>
           
- 
             <Head>
               <p>Ask A Question</p>
             </Head>
@@ -214,7 +231,7 @@ function PostAsk () {
             </Description>
 
             <Button>
-              <Answer type='submit'>Answer</Answer>
+              <Answer type='submit'>Submit</Answer>
             </Button>
             
         
