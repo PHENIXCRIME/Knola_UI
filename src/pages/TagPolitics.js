@@ -12,30 +12,47 @@ const ShowCase = styled.div `
     grid-template-rows: 1fr;
     gap: 0px 2em;
     grid-template-areas: ". . .";
-    margin: 114px 10px 0 10px;
+    margin: 114px 10px 0 20px;
+
+    @media only screen and (max-width: 820px) 
+    
+    {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr ;
+      gap: 2em 0px;
+      grid-template-areas:
+      "left"
+      "center"
+      ;
+    }
 `
+
 const Content__left = styled.div ``
+const Content__right = styled.div `
+@media only screen and (max-width: 820px) {
+  display :none ;
+}
+`
 const Content__center = styled.div ``
-const Content__right = styled.div ``
 
 function Mainpost () {
 
   return (
     <>
-      <ShowCase >
+      <ShowCase id ="showcase">
           
-          <Content__left>
+          <Content__left id ="left" >
             <TagContent/>
           </Content__left>
 
-          <Content__center >
+          <Content__center id ="center">
           <Headtypetext title ="Politics"/>
 
             <GetPoliticBlogs />
 
           </Content__center>
 
-          <Content__right>
+          <Content__right id ="right">
             <ProfileHome
               email ="boat@mail.com"
               name ="Boat charchon"/>
