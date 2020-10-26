@@ -81,7 +81,7 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
   &:hover {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
