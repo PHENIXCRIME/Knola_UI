@@ -21,7 +21,6 @@ const Content__center = styled.div ``
 const Content__right = styled.div ``
 
 
-
 function Home () {
   return (
     <>
@@ -31,12 +30,23 @@ function Home () {
           <Content__left>
             
           </Content__left>
+
           <Content__center>
-            <PostHome/>
-            <Question/>
+            <PostHome
+            email ="boat@mail.com"
+            name ="Boat charchon"/>
+            <Question
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people " 
+            comment = " jebjvbkjrbvlerbsi."
+            />
+            
           </Content__center>
+
           <Content__right>
-            <ProfileHome/>
+          <ProfileHome
+              email ="boat@mail.com"
+              name ="Boat charchon"/>
           </Content__right>
           
       </ShowCase>
