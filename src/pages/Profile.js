@@ -1,47 +1,20 @@
 import React from 'react'
+import PageProfile from '../components/Profile/index'
 import styled from 'styled-components'
-import backgroudImage1 from '../assets/Bigsur.jpg'
-import backgroudImage2 from '../assets/Bigsur2.jpg'
-import BackgroundBlock from '../components/BackgroudBlock'
-import { Title, Subtitle } from '../components/Typography'
 
-const Button = styled.button`
-padding: 1rem 1.5rem ; 
-background-color :transparent ;
-border : #fff solid 1px ; 
-border-radius : 8px ; 
-color : #fff ; 
-margin: 1rem ; 
-cursor : pointer ;
-transition : background-color .5s ;
-text-transform : uppercase ; 
-
-&:hover {
-  background-color : #fff ;
-  color: #000; 
-}
+const Mainask = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `
 
 function Profile () {
   return (
-    <div id='content1'>
-      <BackgroundBlock src={backgroudImage1}>
-        <Title> NATURAL ALL DAY </Title>
-        <Subtitle> - Day BigSur Natural Park - </Subtitle>
-        <Button as='a' href='#content2'>
-          Look night time
-        </Button>
-      </BackgroundBlock>
-      <div id='content2'>
-        <BackgroundBlock src={backgroudImage2}>
-          <Title> NATURAL ALL DAY </Title>
-          <Subtitle> - Night BigSur Natural Park - </Subtitle>
-          <Button as='a' href='#content1'>
-            Back to day time
-          </Button>
-        </BackgroundBlock>
-      </div>
-    </div>
+    <Mainask>
+      <PageProfile/>
+      </Mainask>
   )
 }
 export default Profile
