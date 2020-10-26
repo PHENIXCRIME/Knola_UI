@@ -28,8 +28,8 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              Knola
-              <WebsiteRights> © 2020 All rights reserved.</WebsiteRights>
+              K N O L A
+              <WebsiteRights>  622110321 || 62210332 || © 2020 All rights CAMT DII GEN 1 </WebsiteRights>
             </SocialLogo>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
@@ -52,9 +52,6 @@ const Footer = () => {
                 href=''
               >
                 <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
-                <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
