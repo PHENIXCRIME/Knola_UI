@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import ProfileHome from '../components/ProfileHome/index'
-import PostHome from '../components/PostHome/index'
 import TagContent from '../components/Tag/index'
-import Contentfood from '../components/componenttag/contentfood'
+import PostContent from '../components/PostContent/index'
+import PostHome from '../components/PostHome/index'
+import ProfileHome from '../components/ProfileHome/index'
+import Headtypetext from '../components/HeadTypeTag/index'
+
 
 const ShowCase = styled.div `
     display: grid;
@@ -17,33 +19,40 @@ const Content__left = styled.div ``
 const Content__center = styled.div ``
 const Content__right = styled.div ``
 
+function Mainpost () {
 
-
-function Home () {
   return (
     <>
-      <ShowCase>
+      <ShowCase >
           
           <Content__left>
-          <TagContent/>
-
+            <TagContent/>
           </Content__left>
 
-          <Content__center>
-            <PostHome/>
-            <Contentfood/>
-            <Contentfood/>
-            <Contentfood/>
-            <Contentfood/>
+          <Content__center >
+          <Headtypetext title ="Testmain"/>
+
+            <PostHome 
+            email ="boat@mail.com"
+            name ="Boat charchon"/>
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
 
           </Content__center>
 
           <Content__right>
-            <ProfileHome/>
+            <ProfileHome
+              email ="boat@mail.com"
+              name ="Boat charchon"/>
           </Content__right>
           
       </ShowCase>
     </>
   )
 }
-export default Home
+export default Mainpost
