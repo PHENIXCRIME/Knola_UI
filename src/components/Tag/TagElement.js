@@ -8,10 +8,11 @@ export const TagName = styled.div `
  background-color : white ;
  border-radius : 20px ;
 height  : 210px ;
+padding-right : 20px ;
  a{
    
    margin-left : 15px ;
-   margin-top : 5px ;
+   /* margin-top : 5px ; */
  }
 `
 
@@ -20,7 +21,7 @@ export const TagAll = styled.button `
   display: flex;
   justify-content: center;
   text-align : center ;
-  font-size : 13px ;
+  font-size : 15px ;
   position : relative ;
   border-radius : 10px;
   padding : 7px ; 
@@ -31,7 +32,7 @@ export const TagAll = styled.button `
   letter-spacing : 1px ; 
   transition : 0.5s;
   overflow:hidden;
-  width : 100px ; 
+  width : 80%; 
   cursor: pointer;
   outline : none ;
   border : none ;
