@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import Form from '../Login/Form'
 
 const Post = styled.div `
-  margin-bottom : 20px ;
+  border-radius: 20px;
+  margin-bottom : 40px ;
   box-shadow : 3px 3px 3px #bdc3c7 ;
   background-color : white ;
 `
 const Head = styled.div `
   padding : 10px ;
-  border-bottom : 2px solid #bdc3c7 ;
   display : flex ; 
   flex-direction: column; 
   justify-content : space-around ;
