@@ -7,6 +7,12 @@ export const TagName = styled.div `
  box-shadow : 3px 3px 3px #bdc3c7 ;
  background-color : white ;
  border-radius : 20px ;
+height  : 210px ;
+ a{
+   
+   margin-left : 15px ;
+   margin-top : 5px ;
+ }
 `
 
 
@@ -17,8 +23,8 @@ export const TagAll = styled.button `
   font-size : 15px ;
   position : relative ;
   border-radius : 10px;
-  padding : 30px ; 
-  margin : 30px ; 
+  padding : 7px ; 
+  margin : 16px ; 
   background-color: #11998e ;
   color : #fff ;
   text-decoration : none ;
