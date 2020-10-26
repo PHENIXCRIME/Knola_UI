@@ -7,15 +7,15 @@ const TagContent = () => {
   return (
     <>
         <TagName>
-          <Link to='/tagmath'><TagAll>Math</TagAll></Link>
-          <Link to='/tagscience'><TagAll>Science</TagAll></Link>
-          <Link to='/tagsocial'><TagAll>Social</TagAll></Link>
-          <Link to='/taglanguage'><TagAll>Language</TagAll></Link>
-          <Link to='/taghuman'><TagAll>Human</TagAll></Link>
-          <Link to='/tagtechnology'><TagAll>Technology</TagAll></Link>
-          <Link to='/tagpolitics'><TagAll>Politics</TagAll></Link>
-          <Link to='/tagfood'><TagAll>Food</TagAll></Link>
-          <Link to='/tagtravel'><TagAll>Travel</TagAll></Link>
+          <Link to='/tagmath'><TagAll>MATH</TagAll></Link>
+          <Link to='/tagscience'><TagAll>SCIENCE</TagAll></Link>
+          <Link to='/tagsocial'><TagAll>SOCIAL</TagAll></Link>
+          <Link to='/taglanguage'><TagAll>LANGUAGE</TagAll></Link>
+          <Link to='/taghuman'><TagAll>HUMAN</TagAll></Link>
+          <Link to='/tagtechnology'><TagAll>TECH</TagAll></Link>
+          <Link to='/tagpolitics'><TagAll>POLITICS</TagAll></Link>
+          <Link to='/tagfood'><TagAll>FOOD</TagAll></Link>
+          <Link to='/tagtravel'><TagAll>TRAVEL</TagAll></Link>
         </TagName>
     </>
   );
