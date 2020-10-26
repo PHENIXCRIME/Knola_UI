@@ -13,7 +13,7 @@ const ShowCase = styled.div `
     grid-template-rows: 1fr;
     gap: 0px 2em;
     grid-template-areas: ". . .";
-    margin: 114px 10px 0 20px;
+    margin: 114px 0 0 20px;
 
     @media only screen and (max-width: 820px) 
     
