@@ -98,10 +98,6 @@ function PageProfile () {
             <FillDescription></FillDescription>
           </Description>
 
-          <Button>
-          <Answer>Answer</Answer>
-          </Button>
-
         </ContentRight>
     </Content>
   )
