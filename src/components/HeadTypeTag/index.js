@@ -24,6 +24,7 @@ const Tag = styled.div `
   text-align : center ;
   p {
     font-size : 30px ;
+    font-weight : bold ;
   }
   
 `
