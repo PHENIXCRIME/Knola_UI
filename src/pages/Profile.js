@@ -1,5 +1,5 @@
 import React from 'react'
-import PageProfile from '../components/Profile/index'
+import ProfileMain from '../components/Profile/index'
 import styled from 'styled-components'
 
 const Mainask = styled.div`
@@ -13,7 +13,7 @@ const Mainask = styled.div`
 function Profile () {
   return (
     <Mainask>
-      <PageProfile/>
+      <ProfileMain/>
       </Mainask>
   )
 }
