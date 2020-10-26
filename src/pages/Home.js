@@ -5,6 +5,7 @@ import PostContent from '../components/PostContent/index'
 import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
 import Headtypetext from '../components/HeadTypeTag/index'
+import Footer from '../components/Footer/index'
 
 
 const ShowCase = styled.div `
@@ -35,6 +36,42 @@ function Mainpost () {
             <PostHome 
             email ="boat@mail.com"
             name ="Boat charchon"/>
+            
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
             <PostContent 
             email ="boat@mail.com"
             name ="Boat charchon"
@@ -52,6 +89,7 @@ function Mainpost () {
           </Content__right>
           
       </ShowCase>
+      <Footer/>
     </>
   )
 }
