@@ -14,7 +14,7 @@ const ShowCase = styled.div `
     grid-template-rows: 1fr;
     gap: 0px 2em;
     grid-template-areas: ". . .";
-    margin: 114px 10px 0 10px;
+    margin: 114px 10px 0 20px;
 `
 const Content__left = styled.div ``
 const Content__center = styled.div ``
@@ -31,7 +31,7 @@ function Mainpost () {
           </Content__left>
 
           <Content__center >
-          <Headtypetext title ="Testmain"/>
+          <Headtypetext title ="Home"/>
 
             <PostHome 
             email ="boat@mail.com"
