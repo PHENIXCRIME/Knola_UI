@@ -7,15 +7,10 @@ ${reset}
  html , body , #root {   
   overflow-x :hidden ;
   width: 100vw;
-
-  font-family: 'Kanit' , sans-serif ; 
-  /* font-family: 'Pridi', serif; */
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px ; 
-
   scroll-behavior : smooth ;
-
-  background-color : #99f2c8 ;
-
+  background: linear-gradient(155deg, rgba(103,178,111,1) 0%, rgba(76,162,205,1) 100%);
 }
 
 a { 
