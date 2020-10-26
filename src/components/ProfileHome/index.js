@@ -37,16 +37,16 @@ const Name = styled.div `
   }
 `
 
-function ProfileHome () { 
+function ProfileHome (props) { 
   return (
 
     <Post>
       <Head>
         <Email>
-          <p>Boatcharnchon@mail.com</p>
+          <p>{props.email}</p>
         </Email>
         <Name>
-          <p>Boat Charnchon</p>
+          <p>{props.name}</p>
         </Name>
       </Head>
 

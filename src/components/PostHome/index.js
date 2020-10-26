@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Form from '../Login/Form'
 
 const Post = styled.div `
   border-radius: 20px;
@@ -45,18 +44,19 @@ const Question = styled.input`
 `
 
 
-function PostContent () { 
+function PostHome (props) { 
   return (
 
     <Post>
       <Head>
         <Email>
-          <p>Boatcharnchon@mail.com</p>
+        <p>{props.email}</p>
+          {/* <p>Boatcharnchon@mail.com</p> */}
         </Email>
         <Name>
-          <p>Boat Charnchon</p>
+          <p>{props.name}</p>
+          {/* <p>Boat Charnchon</p> */}
         </Name>
-
           <Question type="text" placeholder="What is your question today ? ... "></Question>
       </Head>
 
@@ -64,4 +64,4 @@ function PostContent () {
   )
 }
 
-export default PostContent 
+export default PostHome

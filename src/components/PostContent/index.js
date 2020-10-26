@@ -100,7 +100,7 @@ cursor: pointer;
  }
 `
 
-function PostContent () { 
+function PostContent (props) { 
 
   return (
 
@@ -108,19 +108,23 @@ function PostContent () {
 
       <Head>
         <Email>
-          <p>Boatcharnchon@mail.com</p>
+        <p>{props.email}</p>
+          {/* <p>Boatcharnchon@mail.com</p> */}
         </Email>
         <Name>
-          <p>Boat Charnchon</p>
+          <p>{props.name}</p>
+          {/* <p>Boat Charnchon</p> */}
         </Name>
       </Head>
 
       <Content>
         <Title>
-            <h3>What the problem politics in thailand?</h3>
+            <h3>{props.title}</h3>
+            {/* <h3>What the problem politics in thailand?</h3> */}
         </Title>
         <Description>
-            <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p>
+            <p>{props.description}</p>
+            {/* <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p> */}
         </Description>
         <Link to='/'><TagAll>Comment</TagAll></Link>
       </Content>

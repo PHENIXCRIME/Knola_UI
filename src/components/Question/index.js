@@ -60,11 +60,12 @@ border : #333 1px solid ;
 border-radius : 10px;
 padding : 1em ; 
 text-align : center ;
+font-size : 18px ;
 
  position : relative ; 
  padding : 15px 30px ; 
  margin : 10px ; 
- background-color: #27022d ;
+ background-color: #67B26F ;
  color : #fff ;
  text-decoration : none ;
  letter-spacing : 1px ; 
@@ -73,9 +74,13 @@ text-align : center ;
  overflow:hidden;
  display: flex;
  justify-content: center;
-
+ border : none ;
+ outline : none ;
+cursor: pointer;
  :hover{
-   background:#a41ee9 ;
+   background-color:#4ca2cd ;
+  outline : none ;
+   
  }
 
  ::before { 
