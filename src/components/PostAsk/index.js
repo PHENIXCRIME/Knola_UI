@@ -18,11 +18,8 @@ const Optiontag = styled.option`
 `
 const Content = styled.div `
   display : flex ; 
-  /* border : 5px solid #3b3b3b ; */
   margin : 10% ;
   height : 500px ;
-  /* border-radius : 20px ; */
-  /* justify-content : center ; */
 `
 const ContentLeft = styled.div `
   border : 5px solid #3b3b3b ;

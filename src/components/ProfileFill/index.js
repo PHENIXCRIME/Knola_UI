@@ -52,64 +52,76 @@ const Head = styled.div `
 const MainAbout = styled.div `
   display: flex;
   justify-content : space-between ;
+  /* flex-direction : column ; */
+  
 `
 const Mainname = styled.div `
   display: flex;
   padding: 0 50px 0 20px;
-
+  /* flex-direction : column ; */
   justify-content : space-between ;
   
   h1 {
     font-weight : bold ;
     font-size : 30px;
     margin-right  :20px ;
+    /* margin-bottom : 10px ; */
   }
   p{
     font-size: 30px;
+    /* margin-bottom : 10px ;    */
   }
 `
 
 const Mainsurname = styled.div `
   display: flex;
   padding: 0 20px 0 50px;
-
+  /* flex-direction : column ; */
   justify-content : space-between ;
 
   h1 {
     font-weight : bold ;
     font-size : 30px;
     margin-right  :20px ;
+    /* margin-bottom : 10px ; */
+
   }
 
   p{
     font-size: 30px;
+    /* margin-bottom : 10px ;    */
   }
 `
 
 const Bio = styled.div `
   display: flex;
   justify-content :space-around ;
-  flex-direction : column ;
   padding : 5% 3%;
 
-  h1{
+  p{
 
     font-size : 30px;
     font-weight : bold ;
     margin-right : 10px ;
-    margin-bottom : 10px ;
-  }
-
-  p{
-    font-size : 18px ;
   }
   `
 
+const FillBio =styled.textarea `
+  width : 90% ;
+  height : 100px ;
+  border-radius: 10px;
+  border: 2px solid gray;
+  font-size : 20px ;
+  outline : none ;
+  padding : 5px ;
+  margin :0 0 0 20px ;
+`
 const Button = styled.div `
   display: flex;
   justify-content: space-around;
+  
 `
-const Edit = styled.button `
+const Done = styled.button `
   width : 150px;
   height : 50px ;
   text-align : center ;
@@ -126,6 +138,7 @@ const Edit = styled.button `
   cursor: pointer;
   outline : none ;
   border : none ;
+
 
  :hover{
    background-color: #67B26F;
@@ -173,13 +186,14 @@ function Profile () {
         </MainAbout>
 
           <Bio>
-            <h1>Bio</h1>
-            <p>Programming is like sex. One mistake and you have to support it for the rest of your life</p>
+            <p>Bio</p>
+            <p></p>
+            <FillBio></FillBio>
           </Bio>
 
-          <Link to='/profilefill'>
-          <Button >
-          <Edit>Edit</Edit>
+          <Link to='/profile'>
+          <Button>
+          <Done>Done</Done>
           </Button>
           </Link>
 

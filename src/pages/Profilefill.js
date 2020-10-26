@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfileMain from '../components/Profile/index'
+import Profile from '../components/ProfileFill/index'
 import styled from 'styled-components'
 
 const Mainask = styled.div`
@@ -10,11 +10,11 @@ const Mainask = styled.div`
   flex-direction: column;
 `
 
-function Profile () {
+function Profilefill () {
   return (
     <Mainask>
-      <ProfileMain/>
+      <Profile/>
       </Mainask>
   )
 }
-export default Profile
+export default Profilefill

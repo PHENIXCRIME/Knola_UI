@@ -18,6 +18,10 @@ export default {
     path : '/profile' , 
     component : lazy(() => import('../pages/Profile'))
   }, 
+  Profilefill : { 
+    path : '/profilefill' , 
+    component : lazy(() => import('../pages/Profilefill'))
+  }, 
   Login : { 
     path : '/login' , 
     component : lazy(() => import ('../pages/Login'))
