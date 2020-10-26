@@ -65,6 +65,9 @@ export default {
   TagTravel : { 
     path : '/tagtravel' , 
     component : lazy(() => import('../pages/TagTravel'))
+  },
+  PropsTest : { 
+    path : '/propstest' , 
+    component : lazy(() => import('../pages/PropsTest'))
   }
-  
 }
