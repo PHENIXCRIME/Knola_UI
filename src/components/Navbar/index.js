@@ -28,9 +28,9 @@ const Navbar = ({toggle}) => {
         <NavItem>
           <NavLinks to ='/ask'> Ask </NavLinks>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
           <NavLinks to ='/answer'>Answer</NavLinks>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
           <NavLinks to ='/profile'>Profile</NavLinks>
         </NavItem>
