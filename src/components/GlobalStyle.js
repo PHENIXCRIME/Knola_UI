@@ -6,6 +6,7 @@ ${reset}
 
  html , body , #root {   
   overflow-x :hidden ;
+  height : 100vh ;
   width: 100vw;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px ; 
