@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import styled from 'styled-components'
-import image1 from '../../assets/flame-1237.png'
+import image1 from '../../assets/flame-save-to-bookmarks.png'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 

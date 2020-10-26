@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react'
 import styled from 'styled-components'
-import image1 from '../../assets/flame-1237.png'
+import image1 from '../../assets/flame-1236.png'
 import PostAPI from '../../services/PostAPI'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
@@ -51,6 +51,7 @@ width : 550px ;
 height : 550px ;
 align-items : center ;
 margin-top : 60px ;
+
 `
 
 const BoxImage = styled.div `

@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import image1 from '../../assets/flame-1237.png'
+import image1 from '../../assets/flame-1402.png'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const Content = styled.div `

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import image1 from '../../assets/flame-1237.png'
+import image1 from '../../assets/flame-1209.png'
 
 const Content = styled.div `
   display : flex ; 
@@ -178,11 +178,6 @@ function Profile () {
             <h1>Name</h1>
             <p>John</p>
           </Mainname>
-
-          <Mainsurname>
-            <h1>Surname</h1>
-            <p>Winyu</p>
-          </Mainsurname>
         </MainAbout>
 
           <Bio>
