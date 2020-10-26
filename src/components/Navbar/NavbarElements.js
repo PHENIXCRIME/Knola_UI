@@ -98,6 +98,12 @@ export const NavLinks = styled(LinkR)`
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    cursor:pointer;
+    color:#01bf71;
+    border-bottom: 3px solid #01bf71;
+  }
+  
   &.active {
     border-bottom: 3px solid #01bf71;
   }
@@ -137,8 +143,16 @@ export const NavBtnLogout= styled.button`
   text-decoration: none;
 
   &:hover {
+    cursor:pointer;
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }
 `;
+
+export const NavUsernameBlock= styled.div`
+
+ color: #fff;
+ padding: 0 1rem;
+
+`
