@@ -1,19 +1,22 @@
 import React,{useContext,useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import { Nav , NavbarContainer , NavLogo , MobileIcon , NavMenu , NavItem , NavLinks , NavBtn , NavBtnLink , NavBtnLogout} from './NavbarElements'
+import { Nav , NavbarContainer , NavLogo , MobileIcon , NavMenu , NavItem , NavLinks , NavBtn , NavBtnLink , NavBtnLogout , NavUsernameBlock} from './NavbarElements'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
+import GetLoginUser from '../../services/GetLoginUser'
 
 const Navbar = ({toggle}) => {
-  const {isLogin,setIsLogin,username}= useContext(LoginContextWrapper)
+  const {isLogin,setIsLogin,setUsername,username,loginUser, setLoginUser}= useContext(LoginContextWrapper)
 
-  const handleLogout = e => {
+  const handleLogout = async e => {
     localStorage.removeItem("user");
     setIsLogin(false)
-    console.log(isLogin)
-    console.log(username)
+    setUsername(null)
+    setLoginUser(null)
   }
 
-  useEffect (()=> console.log(isLogin),[isLogin])
+  useEffect (()=> 
+    console.log(isLogin),[isLogin]
+  )
 
   return (
     <>
@@ -39,7 +42,7 @@ const Navbar = ({toggle}) => {
           <NavBtnLink to = '/login'>Log In</NavBtnLink>
         </NavBtn>:         
         <NavBtn>
-          {username}
+          <NavUsernameBlock>{username}</NavUsernameBlock>
           <NavBtnLogout onClick={handleLogout} >Logout</NavBtnLogout>
         </NavBtn>
       }

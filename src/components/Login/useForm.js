@@ -3,7 +3,7 @@ import LoginAPI from '../../services/LoginAPI'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
-  const {isLogin,setIsLogin,username,setUsername}= useContext(LoginContextWrapper)
+  const {isLogin,setIsLogin,username,setUsername,loginUser, setLoginUser}= useContext(LoginContextWrapper)
   const [values, setValues] = useState({
     username: '',
     password: ''
@@ -25,12 +25,13 @@ const useForm = (callback, validate,isSubmitted, setIsSubmitted) => {
     setErrors(validate(values))
     response =  await LoginAPI(values)
     console.log(response)
-    if (response !== undefined) {
+    if (response) {
       setIsLogin(true)
       setUsername(response.user.user_username)
+      setLoginUser(response.user)
     }
-    await console.log(username)
-    console.log(isLogin)
+    // await console.log(loginUser)
+    // await console.log(username)
   }
   let response = null 
   
