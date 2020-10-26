@@ -36,11 +36,6 @@ function Mainpost () {
             email ="boat@mail.com"
             name ="Boat charchon"/>
             <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
             />
 
           </Content__center>

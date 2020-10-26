@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-
+import GetBlogs from '../../services/GetBlogs'
 
 const Post = styled.div `
   margin-bottom : 100px ;
@@ -100,32 +100,10 @@ cursor: pointer;
  }
 `
 
-function PostContent (props) { 
 
+function PostContent (props,blog) { 
   return (
-
-    <Post>
-
-      <Head>
-        <Email>
-        <p>{props.email}</p>
-        </Email>
-        <Name>
-          <p>{props.name}</p>
-        </Name>
-      </Head>
-
-      <Content>
-        <Title>
-            <h3>{props.title}</h3>
-        </Title>
-        <Description>
-            <p>{props.description}</p>
-        </Description>
-        <Link to='/question'><TagAll>Comment</TagAll></Link>
-      </Content>
-
-    </Post>
+    <GetBlogs />
   )
 }
 
