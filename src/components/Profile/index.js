@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import image1 from '../../assets/flame-1237.png'
+import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const Content = styled.div `
   display : flex ; 
@@ -145,6 +146,7 @@ const Edit = styled.button `
 `
 
 function Profile () {
+  const {isLogin,setIsLogin,username,setUsername,loginUser, setLoginUser,setId}= useContext(LoginContextWrapper)
   return (
 
     <Content>
@@ -163,12 +165,11 @@ function Profile () {
         <MainAbout>
           <Mainname>
             <h1>Name</h1>
-            <p>John</p>
+            <p>{username}</p>
           </Mainname>
 
           <Mainsurname>
-            <h1>Surname</h1>
-            <p>Winyu</p>
+  
           </Mainsurname>
         </MainAbout>
 

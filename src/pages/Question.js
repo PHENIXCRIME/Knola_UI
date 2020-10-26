@@ -32,9 +32,6 @@ function Home () {
           </Content__left>
 
           <Content__center>
-            <PostHome
-            email ="boat@mail.com"
-            name ="Boat charchon"/>
             <Question
             title = "What the problem politics in thailand?"
             description ="There have been heavy protests in Thailand over the mouth of the people " 

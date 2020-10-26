@@ -127,15 +127,6 @@ function Question (props) {
 
     <Post>
 
-      <Head>
-      <Email>
-        <p>{props.email}</p>
-        </Email>
-        <Name>
-          <p>{props.name}</p>
-        </Name>
-      </Head>
-
       <Content>
       <Title>
             <h3>{props.title}</h3>
