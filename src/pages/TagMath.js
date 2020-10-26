@@ -30,7 +30,7 @@ function Mainpost () {
           </Content__left>
 
           <Content__center >
-          <Headtypetext title ="Testmain"/>
+          <Headtypetext title ="Math"/>
 
             <PostHome 
             email ="boat@mail.com"
