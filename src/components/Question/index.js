@@ -121,41 +121,38 @@ const CommentData = styled.div `
     border :  solid 1px gray ;
   }
 `
-function Contentfood () { 
+function Question (props) { 
   return (
 
     <Post>
 
       <Head>
-        <Email>
-          <p>Boatcharnchon@mail.com</p>
+      <Email>
+        <p>{props.email}</p>
         </Email>
         <Name>
-          <p>Boat Charnchon</p>
+          <p>{props.name}</p>
         </Name>
       </Head>
 
       <Content>
-        <Title>
-            <h3>What the problem politics in thailand?</h3>
+      <Title>
+            <h3>{props.title}</h3>
         </Title>
         <Description>
-            <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p>
+            <p>{props.description}</p>
         </Description>
         <Commentfill type="text" placeholder=" Fill your comment "></Commentfill>
         <Link to='/'><TagAll>Comment</TagAll></Link>
-      </Content>
 
-      <CommentArea>
         <CommentData>
-            <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p>
-            <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p>
-            <p>There have been heavy protests in Thailand over the mouth of the people And the claims of human rights in Thailand</p>
+            <p>{props.comment}</p>
         </CommentData>
-      </CommentArea>
+
+      </Content>
 
     </Post>
   )
 }
 
-export default Contentfood
+export default Question
