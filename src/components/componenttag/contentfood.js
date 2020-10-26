@@ -7,6 +7,7 @@ const Post = styled.div `
   margin-bottom : 100px ;
   box-shadow : 3px 3px 3px #bdc3c7 ;
   background-color : white ;
+  border-radius : 20px ;
 `
 const Head = styled.div `
   padding : 10px ;
@@ -94,7 +95,7 @@ text-align : center ;
  }
 `
 
-function Contentfood () { 
+function Question () { 
   return (
 
     <Post>
@@ -122,4 +123,4 @@ function Contentfood () {
   )
 }
 
-export default Contentfood
+export default Question

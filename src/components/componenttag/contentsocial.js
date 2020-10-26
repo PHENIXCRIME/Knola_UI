@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Post = styled.div `
   margin-bottom : 100px ;
   box-shadow : 3px 3px 3px #bdc3c7 ;
+  border-radius : 20px ;
   background-color : white ;
 `
 const Head = styled.div `
