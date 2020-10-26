@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import image1 from '../../assets/flame-1237.png'
 
 const ButtonInputCatagorise = styled.select`
   width : 100px ;
   height: 2rem;
-  border: 1px solid #707070;
+  border: 2px solid #707070;
   border-radius: 5px;
   font-size: 20px;
   color: #283c86;
@@ -40,26 +40,22 @@ const ContentRight = styled.div `
   border-radius : 20px ;
   margin : 10px ;
 `
-// const Content = styled.div `
-//   display : flex ; 
-//   border : 2px solid #3b3b3b ;
-//   margin : 10% ;
-//   height : 500px ;
-// `
-// const ContentLeft = styled.div `
-//   border : 2px solid #3b3b3b ;
-//   width : 50% ;
-// `
-// const ContentRight = styled.div `
-//   border : 2px solid #3b3b3b ;
-//   width : 50% ;
-//   display : flex ; 
-//   flex-direction : column ;
-//   justify-content : space-around ;
-//   background : white ;
 
-// `
-const Image = styled.div ``
+const Image = styled.div `
+background-image : url(${image1}) ;
+background-repeat : no-repeat ;
+background-size : contain ;
+width : 550px ;
+height : 550px ;
+align-items : center ;
+margin-top : 20px ;
+`
+
+const BoxImage = styled.div `
+      display: flex;
+    justify-content: center;
+`
+
 const Head = styled.div `
   text-align : center ;
   padding : 4% ;
@@ -83,9 +79,11 @@ const Question = styled.div `
 
 const FillQuestion =styled.input `
   width : 50% ;
-  border: 1px solid gray;
-  border-radius: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
   height : 40px ;
+  font-size : 20px ;
+  outline : none ;
 `
 const Description = styled.div `
   display: flex;
@@ -95,13 +93,14 @@ const Description = styled.div `
   }
   `
 
-const FillDescription =styled.input `
-  width : 50% ;
+const FillDescription =styled.textarea `
+  width : 70% ;
   height : 100px ;
-  border-radius: 20px;
-  border: 1px solid gray;
-
-
+  border-radius: 10px;
+  border: 2px solid gray;
+  font-size : 20px ;
+  outline : none ;
+  padding : 5px ;
 `
 const Button = styled.div `
   display: flex;
@@ -109,10 +108,10 @@ const Button = styled.div `
   
 `
 const Answer = styled.button `
-  width : 100px;
-  height : 40px ;
+  width : 150px;
+  height : 50px ;
   text-align : center ;
-  font-size : 15px ;
+  font-size : 20px ;
   position : relative ;
   border-radius : 10px;
   background-color: #11998e ;
@@ -149,9 +148,9 @@ function PostAsk () {
 
     <Content>
         <ContentLeft>
-          <Image>
-
-          </Image>
+        <BoxImage>
+          <Image src = {image1} />
+        </BoxImage>
         </ContentLeft>
 
         <ContentRight>
