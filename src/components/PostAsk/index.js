@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState,useContext} from 'react'
 import styled from 'styled-components'
 import image1 from '../../assets/flame-1237.png'
+import PostAPI from '../../services/PostAPI'
+import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const ButtonInputCatagorise = styled.select`
   width : 100px ;
@@ -144,52 +146,86 @@ const Answer = styled.button `
 `
 
 function PostAsk () {
-  return (
+  const {isLogin,setIsLogin,username,setUsername,loginUser, setLoginUser,id}= useContext(LoginContextWrapper)
 
+
+  const [values, setValues] = useState({
+    title:'',
+    content:'',
+    tag_id:'',
+    user_id: id
+    
+  });
+
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    console.log(id)
+    if(isLogin) {
+      PostAPI(values)
+    }
+  };
+
+  
+
+  return (
+  <form onSubmit={handleSubmit} className='form' noValidate>
     <Content>
         <ContentLeft>
         <BoxImage>
           <Image src = {image1} />
         </BoxImage>
         </ContentLeft>
+ 
+          <ContentRight>
+          
+ 
+            <Head>
+              <p>Ask A Question</p>
+            </Head>
+          
+            <Tag>
+              <p>Tag</p>  
+            <ButtonInputCatagorise >
+                <Optiontag onChange={handleChange} value={values.tag_id = 1}>Math</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 2}>Science</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 3}>Social</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 4}>Language</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 5}>Human</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 6}>Teachnology</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 7}>Politics</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 8}>Food</Optiontag>
+                <Optiontag onChange={handleChange} value={values.tag_id = 9}>Travel</Optiontag>
+            </ButtonInputCatagorise>
+            </Tag>
 
-        <ContentRight>
+            <Question>
+              <p>Question</p>
+              <FillQuestion name='title' value={values.title} onChange={handleChange} />
+            </Question>
 
-          <Head>
-            <p>Ask A Question</p>
-          </Head>
+            <Description>
+              <p>Description</p>
+              <FillDescription name='content' value={values.content} onChange={handleChange} />
+            </Description>
 
-          <Tag>
-            <p>Tag</p>  
-          <ButtonInputCatagorise >
-              <Optiontag value='Math'>Math</Optiontag>
-              <Optiontag value='Science'>Science</Optiontag>
-              <Optiontag value='Social'>Social</Optiontag>
-              <Optiontag value='Language'>Language</Optiontag>
-              <Optiontag value='Human'>Human</Optiontag>
-              <Optiontag value='Teachnology'>Teachnology</Optiontag>
-              <Optiontag value='Politics'>Politics</Optiontag>
-              <Optiontag value='Food'>Food</Optiontag>
-              <Optiontag value='Travel'>Travel</Optiontag>
-          </ButtonInputCatagorise>
-          </Tag>
+            <Button>
+              <Answer type='submit'>Answer</Answer>
+            </Button>
+            
+        
 
-          <Question>
-            <p>Question</p>
-            <FillQuestion></FillQuestion>
-          </Question>
-
-          <Description>
-            <p>Description</p>
-            <FillDescription></FillDescription>
-          </Description>
-
-          <Button>
-          <Answer>Answer</Answer>
-          </Button>
-
-        </ContentRight>
+          </ContentRight> 
+        
     </Content>
+  </form>
   )
 }
 export default PostAsk

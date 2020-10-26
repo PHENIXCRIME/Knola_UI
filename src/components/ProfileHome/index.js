@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import styled from 'styled-components'
 import image1 from '../../assets/flame-1237.png'
+import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 
 const Post = styled.div `
@@ -56,6 +57,8 @@ const BoxImage = styled.div `
 `
 
 function ProfileHome (props) { 
+  const {isLogin,setIsLogin,setUsername,username,loginUser, setLoginUser}= useContext(LoginContextWrapper)
+  console.log(username)
   return (
 
     <Post>
@@ -63,12 +66,22 @@ function ProfileHome (props) {
         <BoxImage>
           <Image src = {image1} />
         </BoxImage>
-        <Email>
-          <p>{props.email}</p>
-        </Email>
+        {isLogin ?     
+          <Email>
+            <p>{props.email}</p>
+          </Email> 
+          :
+          <Email>
+            <p>Please Login</p>
+          </Email> 
+        } 
+        {isLogin ?     
         <Name>
-          <p>{props.name}</p>
+          <p>{username}</p>
         </Name>
+          :
+          <div></div>
+        } 
       </Head>
 
     </Post>

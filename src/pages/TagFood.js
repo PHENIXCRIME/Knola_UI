@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import TagContent from '../components/Tag/index'
-import PostContent from '../components/PostContent/index'
 import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
 import Headtypetext from '../components/HeadTypeTag/index'
-
+import GetFoodBlogs from '../services/GetFoodBlogs'
 
 const ShowCase = styled.div `
     display: grid;
@@ -20,7 +19,6 @@ const Content__center = styled.div ``
 const Content__right = styled.div ``
 
 function Mainpost () {
-
   return (
     <>
       <ShowCase >
@@ -32,16 +30,7 @@ function Mainpost () {
           <Content__center >
           <Headtypetext title ="Food"/>
 
-            <PostHome 
-            email ="boat@mail.com"
-            name ="Boat charchon"/>
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
+            <GetFoodBlogs/>
 
           </Content__center>
 
