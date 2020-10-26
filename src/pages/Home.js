@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Footer from '../components/Footer/index'
 import TagContent from '../components/Tag/index'
 import PostContent from '../components/PostContent/index'
 import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
+import Headtypetext from '../components/HeadTypeTag/index'
+
 
 const ShowCase = styled.div `
     display: grid;
@@ -18,7 +19,7 @@ const Content__left = styled.div ``
 const Content__center = styled.div ``
 const Content__right = styled.div ``
 
-function Home () {
+function Mainpost () {
 
   return (
     <>
@@ -29,21 +30,29 @@ function Home () {
           </Content__left>
 
           <Content__center >
-            <PostHome/>
-            <PostContent></PostContent>
-            <PostContent></PostContent>
-            <PostContent></PostContent>
-            <PostContent></PostContent>
+          <Headtypetext title ="Testmain"/>
+
+            <PostHome 
+            email ="boat@mail.com"
+            name ="Boat charchon"/>
+            <PostContent 
+            email ="boat@mail.com"
+            name ="Boat charchon"
+            title = "What the problem politics in thailand?"
+            description ="There have been heavy protests in Thailand over the mouth of the people 
+            And the claims of human rights in Thailand"
+            />
 
           </Content__center>
 
           <Content__right>
-            <ProfileHome/>
+            <ProfileHome
+              email ="boat@mail.com"
+              name ="Boat charchon"/>
           </Content__right>
           
       </ShowCase>
-      {/* <Footer /> */}
     </>
   )
 }
-export default Home
+export default Mainpost
