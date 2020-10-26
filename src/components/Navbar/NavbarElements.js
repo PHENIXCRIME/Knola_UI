@@ -2,6 +2,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
+  /* color : #fff; */
   background : #000 ;
   height: 80px;
   margin-top: -80px;
@@ -13,6 +14,10 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   width : 100%;
+  
+  &:hover {
+    cursor:pointer;
+  }
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -40,10 +45,17 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   font-size: 40px;
-  /* background: -webkit-linear-gradient(#84fab0, #8fd3f4); */
-  /* -webkit-background-clip: text;  */
-  /* -webkit-text-fill-color: transparent; */
+  transition: all 0.2s ease-in-out;
 
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f64f59;
+    cursor:pointer;
+  }
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -97,10 +109,13 @@ export const NavLinks = styled(LinkR)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
+    transition: all 0.2s ease-in-out;
+
     cursor:pointer;
-    color:#01bf71;
+    color:#f64f59;
     border-bottom: 3px solid #01bf71;
   }
   
@@ -125,7 +140,7 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #f64f59;
   }
 `;
 

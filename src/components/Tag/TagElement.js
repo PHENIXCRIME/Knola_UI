@@ -20,7 +20,7 @@ export const TagAll = styled.button `
   display: flex;
   justify-content: center;
   text-align : center ;
-  font-size : 15px ;
+  font-size : 13px ;
   position : relative ;
   border-radius : 10px;
   padding : 7px ; 
@@ -35,7 +35,7 @@ export const TagAll = styled.button `
   cursor: pointer;
   outline : none ;
   border : none ;
-
+  font-weight: bold;
 
  :hover{
    background-color: #67B26F;
