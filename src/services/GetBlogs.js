@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
 const Post = styled.div `
-  margin-bottom : 100px ;
+  margin-bottom : 20px ;
   box-shadow : 3px 3px 3px #bdc3c7 ;
   background-color : white ;
   border-radius: 20px;
