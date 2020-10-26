@@ -6,6 +6,7 @@ import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
 import Headtypetext from '../components/HeadTypeTag/index'
 import Footer from '../components/Footer/index'
+import GetBlogs from '../services/GetBlogs'
 
 
 const ShowCase = styled.div `
@@ -32,53 +33,8 @@ function Mainpost () {
 
           <Content__center >
           <Headtypetext title ="Home"/>
-
-            <PostHome 
-            email ="boat@mail.com"
-            name ="Boat charchon"/>
             
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
+            <GetBlogs/>
 
           </Content__center>
 

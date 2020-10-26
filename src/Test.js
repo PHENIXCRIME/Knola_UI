@@ -6,7 +6,6 @@ import withHelmet from './utils/withHelmet'
 import GlobalStyles from './components/GlobalStyle'
 // import Navbar from './components/Navbar/index'
 import GetTags from './services/GetTags'
-import GetBlogs from './services/GetBlogs'
 import Navbar from './components/Navbar'
 
 function Test() {

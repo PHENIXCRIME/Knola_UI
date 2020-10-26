@@ -1,22 +1,20 @@
-import React from 'react'
+import axios from 'axios'
 
-export default function componentDidMount() {
-  const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body
-  }
-  fetch('http://127.0.0.1:3333/api/v1/blogs', requestOptions)
-      .then(async response => {
-          const data = await response.json();
-          if (!response.ok) {
-              const error = (data && data.message) || response.status;
-              return Promise.reject(error);
-          }
-          this.setState({ postId: data.id })
-      })
-      .catch(error => {
-          this.setState({ errorMessage: error.toString() });
-          console.error('There was an error!', error);
-      });
+export default function PostAPI(values,setErrors) {
+  console.log(values)
+    axios ( {
+      url: 'http://127.0.0.1:3333/api/v1/blogs',
+      method: 'post',
+      data: {
+        "blog_title": values.title,
+        "blog_content": values.content,
+        "tag_id": values.tag_id,
+        "user_id": values.user_id,
+      },
+      responseType: 'json', 
+    }) .then(response => {
+      console.log(response) 
+      if (response.data.status!=200){
+        setErrors(response.data.error)
+    }})
 }

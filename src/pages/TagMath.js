@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import TagContent from '../components/Tag/index'
-import PostContent from '../components/PostContent/index'
-import PostHome from '../components/PostHome/index'
 import ProfileHome from '../components/ProfileHome/index'
 import Headtypetext from '../components/HeadTypeTag/index'
+import GetMathBlogs from '../services/GetMathBlogs'
+
 
 
 const ShowCase = styled.div `
@@ -32,16 +32,7 @@ function Mainpost () {
           <Content__center >
           <Headtypetext title ="Math"/>
 
-            <PostHome 
-            email ="boat@mail.com"
-            name ="Boat charchon"/>
-            <PostContent 
-            email ="boat@mail.com"
-            name ="Boat charchon"
-            title = "What the problem politics in thailand?"
-            description ="There have been heavy protests in Thailand over the mouth of the people 
-            And the claims of human rights in Thailand"
-            />
+            <GetMathBlogs/>
 
           </Content__center>
 

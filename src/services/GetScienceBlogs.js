@@ -100,14 +100,14 @@ cursor: pointer;
  }
 `
 
-export default function GetBlogs() {
+export default function GetScienceBlogs() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     axios ( {
-      url: '/blogs',
+      url: '/blogs/tag/2',
       method: 'get',
       baseURL: 'http://127.0.0.1:3333/api/v1/',
       responseType: 'json', 
@@ -125,7 +125,7 @@ export default function GetBlogs() {
       <> 
         {blogs.map(blog => (
           <Post key={blog.blog_id}>
-          <Head>
+                      <Head>
             <Email>
             <p>boat@mail.com</p>
             </Email>
