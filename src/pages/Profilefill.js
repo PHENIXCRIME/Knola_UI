@@ -1,6 +1,8 @@
 import React from 'react'
 import Profile from '../components/ProfileFill/index'
 import styled from 'styled-components'
+import Footer from '../components/Footer/index'
+
 
 const Mainask = styled.div`
   height: 100vh;
@@ -12,9 +14,12 @@ const Mainask = styled.div`
 
 function Profilefill () {
   return (
-    <Mainask>
+    <>
+      <Mainask>
       <Profile/>
       </Mainask>
+      <Footer/>
+    </>
   )
 }
 export default Profilefill

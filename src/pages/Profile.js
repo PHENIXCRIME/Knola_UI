@@ -1,6 +1,8 @@
 import React from 'react'
 import ProfileMain from '../components/Profile/index'
 import styled from 'styled-components'
+import Footer from '../components/Footer/index'
+
 
 
 const Mainask = styled.div`
@@ -13,9 +15,12 @@ const Mainask = styled.div`
 
 function Profile () {
   return (
+    <>
     <Mainask>
       <ProfileMain/>
     </Mainask>
+      <Footer/>
+    </>
   )
 }
 export default Profile
