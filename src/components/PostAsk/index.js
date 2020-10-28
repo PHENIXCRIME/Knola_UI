@@ -20,6 +20,14 @@ const Content = styled.div `
   display : flex ; 
   margin : 10% ;
   height : 500px ;
+  
+  @media only screen and (max-width: 820px) {
+    display : flex ;
+    flex-direction : column;
+    margin-right : 10% ;
+    margin-left : 10% ;
+  } 
+
 `
 const ContentLeft = styled.div `
   border : 5px solid #3b3b3b ;
@@ -28,6 +36,11 @@ const ContentLeft = styled.div `
   background : white ;
   margin : 10px ;
   padding : 10px ;
+
+  @media only screen and (max-width: 820px) {
+    width : 100% ;
+    height : 30% ;
+  }
   
 `
 const ContentRight = styled.div `
@@ -40,7 +53,11 @@ const ContentRight = styled.div `
   border-radius : 20px ;
   margin : 10px  ;
   padding : 10px ;
-
+  
+  @media only screen and (max-width: 820px) {
+    width : 100% ;
+    height : 80% ;
+  }
 `
 
 const Image = styled.div `
@@ -52,6 +69,11 @@ height : 550px ;
 align-items : center ;
 margin-top : 60px ;
 
+@media only screen and (max-width: 820px) {
+  width : 250px ;
+  height : 250px ;
+  margin-top : -25px ;
+}
 `
 
 const BoxImage = styled.div `
@@ -63,29 +85,51 @@ const Head = styled.div `
   text-align : center ;
   padding : 4% ;
   font-size : 30px ;
+  
   p{
     font-weight : bold ;
     font-size : 45px ;
+  
+    @media only screen and (max-width: 820px) {
+    font-size : 30px ;
+    margin : 30px 0 30px 0;
+    }
   }
 `
 const Tag = styled.div `
   display: flex;
   padding: 0 50px;
   margin-bottom : 20px;
+  
+  @media only screen and (max-width: 820px) {
+  margin-bottom : 40px;  
+    }
   p{
     width: 30%;
     font-size : 30px ;
     font-weight : bold ;
+
+    @media only screen and (max-width: 820px) {
+    font-size : 20px ;
+    
+    }
   }
 `
 
 const Question = styled.div `
   display: flex;
   padding: 0 50px;
+  @media only screen and (max-width: 820px) {
+  margin-bottom : 20px;  
+    }
   p{
     font-size : 30px ;
     width: 30%;
     font-weight : bold ;
+
+    @media only screen and (max-width: 820px) {
+    font-size : 20px ;
+    }
   }
   `
 
@@ -106,6 +150,10 @@ const Description = styled.div `
     font-size : 30px ;
     width: 30%;
     font-weight : bold ;
+  
+    @media only screen and (max-width: 820px) {
+    font-size : 20px ;
+    }
   }
   `
 
@@ -117,6 +165,11 @@ const FillDescription =styled.textarea `
   font-size : 20px ;
   outline : none ;
   padding : 5px ;
+  
+  @media only screen and (max-width: 820px) {
+    width : 70% ;
+    height : 50px ;
+  }
 `
 const Button = styled.div `
   display: flex;
@@ -142,6 +195,12 @@ const Answer = styled.button `
   border : none ;
   font-weight : bold ;
   margin :4%;
+  
+  @media only screen and (max-width: 820px) {
+  margin : 10px ;
+  font-size : 15px ;
+  height : 30px ;
+    }
   
  :hover{
    background-color: #67B26F;
