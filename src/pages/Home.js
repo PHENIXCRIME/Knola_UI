@@ -15,7 +15,7 @@ const ShowCase = styled.div `
     grid-template-rows: 1fr;
     gap: 0px 2em;
     grid-template-areas: ". . .";
-    margin: 114px 0 0 20px;
+    margin: 114px 20px 0 20px;
     min-height : 100vh;
     @media only screen and (max-width: 820px) 
     
@@ -31,7 +31,11 @@ const ShowCase = styled.div `
     }
 `
 
-const Content__left = styled.div ``
+const Content__left = styled.div `
+    /* @media only screen and (max-width: 820px) {
+      margin : -20px 0 20px 0 ;
+    } */
+`
 const Content__right = styled.div `
 @media only screen and (max-width: 820px) {
   display :none ;
