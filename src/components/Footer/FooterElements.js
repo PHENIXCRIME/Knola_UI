@@ -82,22 +82,12 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   /* font-weight: bold; */
-  &:hover {
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    color: #f64f59;
-  }
+
 `;
 
 export const WebsiteRights = styled.div`
   color: #fff;
   margin-left: 16px;
-  cursor: pointer;
-  &:hover {
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    color: #f64f59;
-  }
 `;
 
 export const SocialIcons = styled.div`

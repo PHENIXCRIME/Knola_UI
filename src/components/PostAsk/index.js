@@ -208,16 +208,16 @@ function PostAsk () {
           
             <Tag>
               <p>Tag</p>  
-            <ButtonInputCatagorise >
-                <Optiontag onChange={handleChange} value={values.tag_id = 1}>Math</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 2}>Science</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 3}>Social</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 4}>Language</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 5}>Human</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 6}>Teachnology</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 7}>Politics</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 8}>Food</Optiontag>
-                <Optiontag onChange={handleChange} value={values.tag_id = 9}>Travel</Optiontag>
+            <ButtonInputCatagorise name="tag_id" id="select" onChange={handleChange} >
+                <Optiontag value={values.tag_id = 1}>Math</Optiontag>
+                <Optiontag value={values.tag_id = 2}>Science</Optiontag>
+                <Optiontag value={values.tag_id = 3}>Social</Optiontag>
+                <Optiontag value={values.tag_id = 4}>Language</Optiontag>
+                <Optiontag value={values.tag_id = 5}>Human</Optiontag>
+                <Optiontag value={values.tag_id = 6}>Teachnology</Optiontag>
+                <Optiontag value={values.tag_id = 7}>Politics</Optiontag>
+                <Optiontag value={values.tag_id = 8}>Food</Optiontag>
+                <Optiontag value={values.tag_id = 9}>Travel</Optiontag>
             </ButtonInputCatagorise>
             </Tag>
 

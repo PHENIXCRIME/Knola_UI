@@ -63,7 +63,6 @@ function Mainpost () {
           </Content__right>
           
       </ShowCase>
-      <Footer/>
     </>
   )
 }

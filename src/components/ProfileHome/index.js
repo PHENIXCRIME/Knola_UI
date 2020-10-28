@@ -60,7 +60,6 @@ function ProfileHome (props) {
   const {isLogin,setIsLogin,setUsername,username,loginUser, setLoginUser}= useContext(LoginContextWrapper)
   console.log(username)
   return (
-
     <Post>
       <Head>
         <BoxImage>
@@ -83,7 +82,6 @@ function ProfileHome (props) {
           <div></div>
         } 
       </Head>
-
     </Post>
   )
 }
