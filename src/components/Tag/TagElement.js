@@ -2,18 +2,12 @@ import styled from 'styled-components'
 
 export const TagName = styled.div `
  display : grid ;
- grid-template-columns : repeat(3,0.5fr) ;
+ grid-template-columns : repeat(3,auto) ;
  grid-gap : 3px ;
  box-shadow : 3px 3px 3px #bdc3c7 ;
  background-color : white ;
  border-radius : 20px ;
 height  : 210px ;
-padding-right : 20px ;
- a{
-   
-   margin-left : 15px ;
-   /* margin-top : 5px ; */
- }
 `
 
 
@@ -38,11 +32,11 @@ export const TagAll = styled.button `
   border : none ;
   font-weight: bold;
 
- :hover{
+ &:hover{
    background-color: #67B26F;
  }
 
- ::before { 
+ &::before { 
    content : '' ;
    position : absolute ; 
    top :0;
@@ -53,7 +47,7 @@ export const TagAll = styled.button `
    transition:0.7s;
  }
 
- :hover::before{
+ &:hover::before{
   left:100% ;
  }
 `
