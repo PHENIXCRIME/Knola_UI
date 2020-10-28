@@ -16,7 +16,7 @@ const ShowCase = styled.div `
     gap: 0px 2em;
     grid-template-areas: ". . .";
     margin: 114px 0 0 20px;
-
+    min-height : 100vh;
     @media only screen and (max-width: 820px) 
     
     {
