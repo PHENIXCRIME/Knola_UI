@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Form.css';
+// import './Form.css';
+import './Form.scss'
 import FormRegister from './FormRegister';
 import FormSuccess from './FormSuccess';
 

@@ -2,7 +2,8 @@ import React,{useEffect,useContext} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
-import './Form.css';
+// import './Form.css';
+import './Form.scss'
 import {LoginContextWrapper} from '../../contexts/LoginContext'
 
 const FormSignup = ({ submitForm }, isSubmitted, setIsSubmitted) => {

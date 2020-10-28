@@ -2,7 +2,8 @@ import React,{useEffect} from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import { Link } from 'react-router-dom'
-import './Form.css';
+// import './Form.css';
+import './Form.scss'
 
   const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
