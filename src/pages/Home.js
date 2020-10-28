@@ -32,9 +32,6 @@ const ShowCase = styled.div `
 `
 
 const Content__left = styled.div `
-    /* @media only screen and (max-width: 820px) {
-      margin : -20px 0 20px 0 ;
-    } */
 `
 const Content__right = styled.div `
 @media only screen and (max-width: 820px) {
